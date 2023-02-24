@@ -1,0 +1,94 @@
+
+body{
+	background-color: #E7DCB7;
+}
+h1, td /*td: celda*/ 
+{
+	font-family: Arial;
+}
+/*none = valor nulo, 0*/
+/*
+img 
+{
+	margin:40px 60px 60px 0px; superior - derecho - inferior - izquierdo
+	border: 10px solid blue;
+	float: left; -> Flotante 
+	entre imagenes mantiene el flotante
+}
+
+*/
+
+p
+{
+	margin-left:45px;
+	font-size: 20px;
+}
+a
+{
+	font-size: 42px;
+	margin-left:10px;
+	font-family: Calibri;
+	text-decoration:none; /*saca subrayado*/
+	color:black;
+	/*cursor:none; desaparece cursor en el link*/
+	cursor:help; /*aparece con ayuda*/
+	
+}
+/*para los id (identificadores) se utiliza #*/
+#palacio
+{
+	
+	float: right;
+	width: 150px;
+	margin: 10px; 
+	padding: 10px; 
+	border: 1px solid #AC1BDA; 
+	
+}
+#uba2
+{
+	height: 15%; /*valor relativo: en relacion al tamaño de la ventana*/
+	/*height: 6cm; cm también es reconocida por los navegadores*/
+	width: 15%; /*valor absoluto*/
+	/*usando valor absoluta es la msima para todas pantallas - con valores relativos se va a achicar conforme a la venta;*/
+	padding: 10px; 
+	margin: 10px; 
+	border: 6px solid black; 
+	float: center;
+}
+/*para las clases se utiliza .*/
+.universidad
+{
+	height: 5%; /*valor relativo: en relacion al tamaño de la ventana*/
+	/*height: 6cm; cm también es reconocida por los navegadores*/
+	width: 5%; /*valor absoluto*/
+	/*usando valor absoluta es la msima para todas pantallas - con valores relativos se va a achicar conforme a la venta;*/
+	padding: 10px; 
+	margin: 10px; 
+	border: 6px solid black; 
+	float: left;
+	/*width: 250px;*/ 
+}
+table, td, th
+{
+		border: 1px solid black;
+		background:white;
+}
+th
+{
+	color: blue;
+}
+td, th
+{
+	padding:10px;
+	padding-right:40px;
+	background:#788991;
+}
+#celda_video
+{
+	background:red;
+}
+#pasantia
+{
+	text-align: center;
+}
