@@ -2,21 +2,6 @@
 body{
 	background-color: #E7DCB7;
 }
-h1, td /*td: celda*/ 
-{
-	font-family: Arial;
-}
-/*none = valor nulo, 0*/
-/*
-img 
-{
-	margin:40px 60px 60px 0px; superior - derecho - inferior - izquierdo
-	border: 10px solid blue;
-	float: left; -> Flotante 
-	entre imagenes mantiene el flotante
-}
-
-*/
 
 p
 {
@@ -28,62 +13,49 @@ a
 	font-size: 42px;
 	margin-left:10px;
 	font-family: Calibri;
-	text-decoration:none; /*saca subrayado*/
+	text-decoration:none; 
 	color:black;
-	/*cursor:none; desaparece cursor en el link*/
-	cursor:help; /*aparece con ayuda*/
+	cursor:help; 
 	
 }
-/*para los id (identificadores) se utiliza #*/
-#palacio
+
+
+.palacio
 {
-	
 	float: right;
 	width: 150px;
 	margin: 10px; 
 	padding: 10px; 
 	border: 1px solid #AC1BDA; 
-	
 }
-#uba2
-{
-	height: 15%; /*valor relativo: en relacion al tamaño de la ventana*/
-	/*height: 6cm; cm también es reconocida por los navegadores*/
-	width: 15%; /*valor absoluto*/
-	/*usando valor absoluta es la msima para todas pantallas - con valores relativos se va a achicar conforme a la venta;*/
-	padding: 10px; 
-	margin: 10px; 
-	border: 6px solid black; 
-	float: center;
-}
-/*para las clases se utiliza .*/
+
 .universidad
 {
-	height: 5%; /*valor relativo: en relacion al tamaño de la ventana*/
-	/*height: 6cm; cm también es reconocida por los navegadores*/
-	width: 5%; /*valor absoluto*/
-	/*usando valor absoluta es la msima para todas pantallas - con valores relativos se va a achicar conforme a la venta;*/
-	padding: 10px; 
-	margin: 10px; 
-	border: 6px solid black; 
-	float: left;
-	/*width: 250px;*/ 
+	height: 10%; 
+	width: 10%; 
+	padding: 5px; 
+	margin: 5px; 
+	border: 5px solid red; 
+	float: left; 
 }
-table, td, th
+article
 {
-		border: 1px solid black;
-		background:white;
+	font-family:Tahoma;
+	margin-left:40px;
+	font-size: 20px;
 }
-th
+table, td
 {
-	color: blue;
-}
-td, th
-{
+	border: 1px solid #6864A4;
+	background: #979DB5;
 	padding:10px;
-	padding-right:40px;
-	background:#788991;
+	
 }
+th,tr
+{
+	background:lightcyan;
+}
+
 #celda_video
 {
 	background:red;
@@ -91,4 +63,28 @@ td, th
 #pasantia
 {
 	text-align: center;
+}
+#video_ing{
+	height:50%;
+	width:50%;
+	border:5px solid lightskyblue;
+	
+}
+.titulo_2{
+	font-family: 'Tourney', cursive;
+	color:blue;
+	text-align: center;
+	margin:20px;
+	border-color:#FC0421;
+	border-style: dashed double dotted double;
+
+}
+.uba2
+{
+	height: 40%; 
+	width: 40%; 
+	padding: 5px; 
+	margin: 5px; 
+	border: 5px dashed blue; 
+	float: right;
 }

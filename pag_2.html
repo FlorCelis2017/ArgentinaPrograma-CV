@@ -1,36 +1,70 @@
 <HTML>
 	<HEAD>
-			<title>Ing Electronica - FIUBA</title>
-			<link rel= "stylesheet" href="CSS/estilos.css" type = "text/css"/>
-	</HEAD>
-<BODY bgcolor="#E8D0D0>
 
-	<h1>Ing Electronica - FIUBA</h1>
-	<img src = "IMG/uba_general.jpeg" id="uba2"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,100&display=swap" rel="stylesheet">
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" contet =width=device-width, inital-scale=1.0">
+		
+		<!--Open Graph data-->
+		<meta property="og:title" content="Que es ing electronica"/>
+		<meta property="og:type" content="Videos"/>			
+		<meta property="og:image" content="IMG/facultad.jpg"/>
+		<meta property="og:description" content="Video sobre la ing electronica">
+	
+	
+		<title>Ing Electronica - FIUBA</title>
+		<link rel= "stylesheet" href="CSS/estilos.css" type = "text/css"/>
+		<link rel="icon" href="IMG/icono.ico" type="image/ico"/>
+	</HEAD>
+<BODY>
+
+	<h1 class="titulo_2">Ing Electronica - FIUBA</h1>
+
 	<hr>
 
-		<video src= "VIDEOS/Ing_e.mp4" style="height:480px;width:400px;border:2px solid black;"controls/>
-		<!-- controls: da el tick de play y la pausa al video -->
-		
-		<!---<script>
-			alert("Hola....."); Prioriza el alert de head
-		</script>-->
+		<video id="video_ing" controls >
+			<source src= "VIDEOS/Ing_e.mp4" type="video/mp4">
+			<source src= "VIDEOS/Ing_e.mpeg" type="video/mpeg">
+			Video describiendo de que se ocupa un ingeniero electronico.
 		</video>
 
 		<p>Fuente: ITBA Universidad</p>
-		<hr>
-		<h2>Ingeniería Electrónica en la U-B-A</h2>
+		<hr><br>
+		<img src = "IMG/uba_general.jpeg" class="uba2"/>
+	
+		<h2 class="titulo_3">Ingeniería Electrónica en la U-B-A</h2>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/Ruzz11GspXo" title="YouTube video player" 
 		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
 		picture-in-picture; web-share" allowfullscreen></iframe>
-		<p>
+		
+		<article>
 			Un poco  de historia...
 			La Universidad de Buenos Aires (UBA) es una universidad nacional pública argentina <br>
 			fundada el 12 de agosto de 1821 por el gobernador de la provincia de Buenos Aires,<br>
-			Martín Rodríguez, y su ministro de gobierno, Bernardino Rivadavia.<
-		</p>
+			Martín Rodríguez, y su ministro de gobierno, Bernardino Rivadavia.
+		</article>
 		<hr>
-	<a href ="index.html"target = "_black">Volver al CV</a>
-	
+		<h3>¿Quieres saber si tu problema lo puede resolver un ing. electrónico?</h3>
+		<form name ="consulta_problema" action=" "method="get">
+			<label>Nombre:</label>
+			<input type="text" name="nombre" placeholder="Ingrese su nombre:"/>
+			<br>
+			<label>Incoveniente:</label>
+			<textarea name="suceso" placeholder="¿Qué ha sucedido?"></textarea>
+			<br>
+			Fecha del suceso: <input name="fecha" type="date"/>
+			<label>E-mail:</label>
+			<input type="email" name="email" placeholder="Ingrese su e-mail"/>
+			<br>
+			<input type="button" value="Enviar"/>
+		</form>
+		<hr>
+		<footer>
+		<a href ="index.html"target = "_black"><button>Volver al CV</button></a>
+		</footer>
 	</BODY>	
 </HTML>
